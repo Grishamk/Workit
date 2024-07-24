@@ -52,6 +52,7 @@ $fuente-secundaria: 'manrope';
     padding: 0;
     box-sizing: border-box;
     //border: solid 2px red;
+    color: $color-quinto;
 }
 
 html{
@@ -60,7 +61,7 @@ html{
 
 body{
     font-size: 1.6rem;
-    background-color: $color-secundario;
+    background-color: $color-terciario;
     font-family: 'manrope';
 }
 

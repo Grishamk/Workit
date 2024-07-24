@@ -3,9 +3,10 @@
 .header{
     background-color: $color-principal;
     padding: 0 16px;
-    border-bottom-left-radius: 50% 10%;
-    border-bottom-right-radius: 50% 10%;
-    margin-bottom: 156px;
+    border-bottom-left-radius: 50% 5%;
+    border-bottom-right-radius: 50% 5%;
+    position: relative;
+    z-index: 10;
 
     .header__nav{
         @include flexRule(row);
@@ -52,6 +53,7 @@
     
         .header__main--span{
             text-decoration: underline;
+            color: $color-terciario;
             text-decoration-color: $color-cuaternario;
             text-underline-offset: 8px;
         }
@@ -62,6 +64,7 @@
         position: relative;
         top: 80px;
         width: 100%;
+        z-index: 10;
         img{
             @include wH(320px,184px);
         }
@@ -79,24 +82,56 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 main{
-    padding: 0 16px;
-}
-.seccion__oferta{
-    background-color: $color-secundario;
+
+    .seccion__oferta{
+        @include flexRule(column,center,center);
+        gap: 40px;
+        padding: 0 16px;
+        background-color: $color-secundario;
+        text-align: center;
+        padding-bottom: 148px;
+        border-bottom-left-radius: 50% 5%;
+        border-bottom-right-radius: 50% 5%;
+        padding-top: 208px;
+        position: relative;
+        top: -52px;
+    }
+
+    .oferta__container{
+        @include flexRule(column,null,center);
+        width: 100%;
+
+        .oferta__numero{
+            @include flexRule(null,center,center);
+            @include wH(48px,48px);
+            font-family: $fuente-principal;
+            font-variation-settings: 'opsz' 500;
+            font-size: 2rem;
+            border: solid 1px $color-quinto;
+            border-radius: 100%;
+            margin-bottom: 24px;
+
+            p{
+                color: $color-principal;
+            }
+        }
+
+        .oferta__titular{
+            margin-bottom: 16px;
+            font-size: 2.8rem;
+            color: $color-principal;
+            font-family: $fuente-principal;
+            font-variation-settings: 'opsz' 500;
+            font-weight: 500;
+        }
+    }
+
+    .seccion__founder{
+        background-color: $color-terciario;
+        padding: 0 16px;
+        margin-top: 80px;
+    }
 }
 
 
