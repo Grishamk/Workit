@@ -5,7 +5,6 @@
     padding: 0 16px;
     border-bottom-left-radius: 50% 10%;
     border-bottom-right-radius: 50% 10%;
-    position: relative;
     margin-bottom: 156px;
 
     .header__nav{
@@ -39,13 +38,14 @@
     .header__main{
         @include flexRule(column,center,center);
         width: 100%;
-        padding-bottom: 156px;
+        
 
         h1{
             font-family: $fuente-principal;
-            font-size: 4rem;
+            font-variation-settings: 'opsz' 500;
+            font-size: 4.8rem;
             color: $color-terciario;
-            font-weight:400;
+            //font-weight:400;
             text-align: center;
             margin-bottom: 40px;
         }
@@ -58,10 +58,12 @@
 
     }
     .header__image-hero{
-        position: absolute;
-        top: 380px;
+        @include flexRule(null,center);
+        position: relative;
+        top: 80px;
+        width: 100%;
         img{
-            @include wH(320px,184px)
+            @include wH(320px,184px);
         }
     }  
 }
@@ -90,7 +92,20 @@
 
 
 
-
+main{
+    padding: 0 16px;
+}
 .seccion__oferta{
     background-color: $color-secundario;
+}
+
+
+
+
+
+
+
+
+footer{
+    padding: 0 16px;
 }
