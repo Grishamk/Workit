@@ -1,0 +1,33 @@
+@import "globales.scss";
+
+.header{
+    background-color: $color-principal;
+    padding: 0 16px;
+}
+
+.header__nav{
+    @include flexRule(row);
+    gap: 124px;
+    padding-top: 32px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.seccion__oferta{
+    background-color: $color-secundario;
+}
