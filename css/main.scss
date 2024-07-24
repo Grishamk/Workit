@@ -3,14 +3,77 @@
 .header{
     background-color: $color-principal;
     padding: 0 16px;
+    border-bottom-left-radius: 50% 10%;
+    border-bottom-right-radius: 50% 10%;
+    position: relative;
+    margin-bottom: 156px;
+
+    .header__nav{
+        @include flexRule(row);
+        gap: 120px;
+        padding-top: 32px;
+    
+        .nav__logo{
+            img{
+                width: 100%;
+            };
+        }
+        .nav__button{
+            text-decoration: none;
+            width: 124px;
+            padding-bottom: 64px;
+            p{
+                color: $color-terciario;
+                padding-bottom: 4px;
+                font-weight: bold;
+                width: 132px;
+            }
+            hr{
+                height: 3px;
+                background-color: $color-cuaternario;
+                border: none;
+            }
+        }
+    }
+    
+    .header__main{
+        @include flexRule(column,center,center);
+        width: 100%;
+        padding-bottom: 156px;
+
+        h1{
+            font-family: $fuente-principal;
+            font-size: 4rem;
+            color: $color-terciario;
+            font-weight:400;
+            text-align: center;
+            margin-bottom: 40px;
+        }
+    
+        .header__main--span{
+            text-decoration: underline;
+            text-decoration-color: $color-cuaternario;
+            text-underline-offset: 8px;
+        }
+
+    }
+    .header__image-hero{
+        position: absolute;
+        top: 380px;
+        img{
+            @include wH(320px,184px)
+        }
+    }  
 }
 
-.header__nav{
-    @include flexRule(row);
-    gap: 124px;
-    padding-top: 32px;
+.button{
+    @include wH(133px,55px);
+    background-color: $color-cuaternario;
+    color: $color-principal;
+    margin: 0 auto;
+    font-weight: bold;
+    border: none;
 }
-
 
 
 

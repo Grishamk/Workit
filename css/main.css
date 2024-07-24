@@ -19,16 +19,23 @@ html {
 
 body {
   font-size: 1.6rem;
-  background-color: #FFFFFF;
+  background-color: #FCF8FF;
   font-family: "manrope";
+}
+
+img {
+  width: 50%;
 }
 
 .header {
   background-color: #24053E;
   padding: 0 16px;
+  border-bottom-left-radius: 50% 10%;
+  border-bottom-right-radius: 50% 10%;
+  position: relative;
+  margin-bottom: 156px;
 }
-
-.header__nav {
+.header .header__nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -36,8 +43,75 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  gap: 124px;
+  gap: 120px;
   padding-top: 32px;
+}
+.header .header__nav .nav__logo img {
+  width: 100%;
+}
+.header .header__nav .nav__button {
+  text-decoration: none;
+  width: 124px;
+  padding-bottom: 64px;
+}
+.header .header__nav .nav__button p {
+  color: #FFFFFF;
+  padding-bottom: 4px;
+  font-weight: bold;
+  width: 132px;
+}
+.header .header__nav .nav__button hr {
+  height: 3px;
+  background-color: #44FFA1;
+  border: none;
+}
+.header .header__main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  padding-bottom: 156px;
+}
+.header .header__main h1 {
+  font-family: "fraunces";
+  font-size: 4rem;
+  color: #FFFFFF;
+  font-weight: 400;
+  text-align: center;
+  margin-bottom: 40px;
+}
+.header .header__main .header__main--span {
+  text-decoration: underline;
+  text-decoration-color: #44FFA1;
+  text-underline-offset: 8px;
+}
+.header .header__image-hero {
+  position: absolute;
+  top: 380px;
+}
+.header .header__image-hero img {
+  width: 320px;
+  height: 184px;
+}
+
+.button {
+  width: 133px;
+  height: 55px;
+  background-color: #44FFA1;
+  color: #24053E;
+  margin: 0 auto;
+  font-weight: bold;
+  border: none;
 }
 
 .seccion__oferta {
